@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring Tailwind Css</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1
+      class="bg-lime-500 text-5xl p-4 rounded-3xl border-4 border-indigo-600 hover:bg-sky-700 w-1/2 mx-auto"
+    >
+      Don't look at my tail
+    </h1>
+    <h5 class="line-through">I have a secret tail</h5>
+    <p>Here we will learn about tailwind css</p>
+    <button
+      class="bg-teal-500 px-4 py-2 border-solid border-4 border-indigo-600 rounded-full"
+    >
+      click me
+    </button>
+    <!-- here justify-center is tailwind short form of justify-content-center...and items-center is short form of align-items-center..flex represents display-flex -->
+    <section class="h-40 bg-sky-300 flex justify-center items-center">
+      <div>
+        <h1 class="bg-yellow-500">text align</h1>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-around">
+        <div class="bg-lime-300">box-1</div>
+        <div class="bg-lime-300">box-2</div>
+        <div class="bg-lime-300">box-3</div>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-3xl">This is grid layout</h2>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="bg-blue-600">1</div>
+        <div class="bg-blue-600">2</div>
+        <div class="bg-blue-600">3</div>
+        <div class="bg-blue-600 col-span-2">4</div>
+        <div class="bg-blue-600">5</div>
+        <div class="bg-blue-600">6</div>
+        <div class="bg-blue-600">7</div>
+        <div class="bg-blue-600">8</div>
+        <div class="bg-blue-600 row-span-3">9</div>
+        <div class="bg-blue-600">10</div>
+        <div class="bg-blue-600">11</div>
+        <div class="bg-blue-600">12</div>
+        <div class="bg-blue-600">13</div>
+        <div class="bg-blue-600">14</div>
+        <div class="bg-blue-600">15</div>
+        <div class="bg-blue-600">16</div>
+      </div>
+    </section>
+    <section>
+      <h3 class="text-2xl">My grid</h3>
+      <div class="grid grid-cols-3 gap-3">
+        <div class="bg-yellow-200 col-span-3">header</div>
+        <div class="bg-yellow-200 col-span-2 h-40">main content</div>
+        <div class="bg-yellow-200">side nav</div>
+        <div class="bg-yellow-200 col-span-3">footer</div>
+      </div>
+    </section>
+  </body>
+</html>
